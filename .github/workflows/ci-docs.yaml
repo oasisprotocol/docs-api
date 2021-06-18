@@ -1,0 +1,42 @@
+# NOTE: This name appears in GitHub's Checks API and in workflow's status badge.
+name: ci-docs
+
+# Trigger the workflow when:
+on:
+  push:
+    branches:
+      - main
+
+  # Every 15 minutes (for the default/main branch).
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+
+  publish-docs:
+    # NOTE: This name appears in GitHub's Checks API.
+    name: publish-docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Update all submodules to latest versions
+        run: |
+          # Update submodules.
+          git submodule update --remote
+          # Stop if there are no changes.
+          git diff --quiet && exit 0
+
+          git config user.name "${COMMITTER_NAME}"
+          git config user.email "${COMMITTER_EMAIL}"
+          git add .
+          git commit --message "${COMMIT_MESSAGE}"
+          git push
+        env:
+          COMMIT_MESSAGE: Update submodules
+          COMMITTER_NAME: github-actions[bot]
+          COMMITTER_EMAIL: noreply@github.com
