@@ -1,0 +1,4 @@
+[submodule "oasis-sdk"]
+	path = oasis-sdk
+	url = https://github.com/oasisprotocol/oasis-sdk.git
+	branch = api-reference
