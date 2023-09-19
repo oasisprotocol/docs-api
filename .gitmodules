@@ -1,0 +1,12 @@
+[submodule "modules/oasis-core"]
+	path = modules/oasis-core
+	url = https://github.com/oasisprotocol/oasis-core
+	branch = master
+[submodule "modules/oasis-sdk"]
+	path = modules/oasis-sdk
+	url = https://github.com/oasisprotocol/oasis-sdk
+	branch = main
+[submodule "modules/sapphire-paratime"]
+	path = modules/sapphire-paratime
+	url = https://github.com/oasisprotocol/sapphire-paratime
+	branch = main
