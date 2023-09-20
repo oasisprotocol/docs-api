@@ -1,8 +1,8 @@
 [submodule "oasis-sdk"]
-	path = oasis-sdk
+	path = modules/oasis-sdk
 	url = https://github.com/oasisprotocol/oasis-sdk.git
 	branch = api-reference
 [submodule "sapphire-paratime"]
-	path = sapphire-paratime
+	path = modules/sapphire-paratime
 	url = https://github.com/oasisprotocol/sapphire-paratime.git
 	branch = api-reference
