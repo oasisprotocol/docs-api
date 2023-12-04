@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Oasis API Reference Guide</title>
+		<meta charset="UTF-8" /> 
+		<style>
+@font-face {
+  font-family: Euclidcircularr;
+  src: url("Euclid%20Circular%20B%20Regular.ttf");
+}
+@font-face {
+  font-family: Euclidcircularl;
+  src: url("Euclid%20Circular%20B%20Light.ttf");
+}
+
+.oasis-docs {
+	padding-top:20px;
+}
+
+h1 {
+	font-family: Euclidcircularr,sans-serif;
+	color: #33c;
+}
+
+a {
+	color: black;
+}
+
+ul {
+	margin: 15px;
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+body {
+	margin: auto;
+	max-width: 960px;
+	font-family: Euclidcircularl,sans-serif;
+	font-size: 16px;
+}
+
+fieldset {
+	border: 1px solid #0665f4;
+	border-radius: 10px;
+	margin: 30px 0;
+}
+
+fieldset legend {
+	font-family: Euclidcircularr,sans-serif;
+}
+		</style>
+	</head>
+	<body>
+		<div class="oasis-docs">
+			<a href="https://docs.oasis.io">&lt;&lt; Oasis Docs</a>
+		</div>
+
+		<h1>The Oasis API Reference Guide</h1>
+		<fieldset>
+			<legend>TypeScript</legend>
+			<ul>
+				<li><a href="js/client">Core Client</a></li>
+				<li><a href="js/client-rt">Core ParaTime Client</a></li>
+				<li><a href="js/client-signer-ledger">Ledger Signer</a></li>
+				<li><a href="js/client-ext-utils">Browser Extension Library</a></li>
+				<li><a href="js/sapphire-paratime">Sapphire Client</a></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Rust</legend>
+			<ul>
+				<li><a href="rust/oasis_contract_sdk">Contract SDK</a> (<a href="rust/oasis_contract_sdk_storage">storage</a>, <a href="rust/oasis_contract_sdk_types">types</a>)</li>
+				<li><a href="rust/oasis_core_runtime">Core ParaTime</a></li>
+				<li><a href="rust/oasis_runtime_sdk">ParaTime SDK</a> (<a href="rust/oasis_runtime_sdk_contracts">contracts</a>, <a href="rust/oasis_runtime_sdk_macros">macros</a>)</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Solidity</legend>
+			<ul>
+				<li><a href="sol/sapphire-contracts">Sapphire Contracts</a></li>
+			</ul>
+		</fieldset>
+		<footer>Copyright © 2023 Oasis Protocol Foundation. All rights reserved.</footer>
+	</body>
+</html>
