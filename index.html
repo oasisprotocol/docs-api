@@ -2,15 +2,16 @@
 <html>
 	<head>
 		<title>The Oasis API Reference Guide</title>
-		<meta charset="UTF-8" /> 
+		<meta charset="UTF-8" />
+		<link rel="icon" href="favicon.svg"/>
 		<style>
 @font-face {
-  font-family: Euclidcircularr;
-  src: url("Euclid%20Circular%20B%20Regular.ttf");
+  font-family: RobotoMedium;
+  src: url("Roboto-Medium.ttf");
 }
 @font-face {
-  font-family: Euclidcircularl;
-  src: url("Euclid%20Circular%20B%20Light.ttf");
+  font-family: RobotoRegular;
+  src: url("Roboto-Regular.ttf");
 }
 
 .oasis-docs {
@@ -18,12 +19,16 @@
 }
 
 h1 {
-	font-family: Euclidcircularr,sans-serif;
-	color: #33c;
+	font-family: RobotoMedium,sans-serif;
+	font-size: 3rem;
 }
 
 a {
-	color: black;
+	color: rgb(5, 0, 226);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 
 ul {
@@ -39,18 +44,19 @@ li {
 body {
 	margin: auto;
 	max-width: 960px;
-	font-family: Euclidcircularl,sans-serif;
+	font-family: RobotoRegular,sans-serif;
 	font-size: 16px;
 }
 
 fieldset {
-	border: 1px solid #0665f4;
-	border-radius: 10px;
+	border: 1px solid black;
+	border-radius: 0px;
 	margin: 30px 0;
 }
 
 fieldset legend {
-	font-family: Euclidcircularr,sans-serif;
+	font-family: RobotoRegular,sans-serif;
+	font-weight: bold;
 }
 		</style>
 	</head>
@@ -73,6 +79,7 @@ fieldset legend {
 			<ul>
 				<li><a href="rust/oasis_core_runtime">Core ParaTime</a></li>
 				<li><a href="rust/oasis_runtime_sdk">ParaTime SDK</a> (<a href="rust/oasis_runtime_sdk_contracts">contracts</a>, <a href="rust/oasis_runtime_sdk_macros">macros</a>)</li>
+				<li><a href="rust/rofl_utils">ROFL utils</a></li>
 				<li><a href="rust/oasis_contract_sdk">Wasm Contract SDK</a> (<a href="rust/oasis_contract_sdk_storage">storage</a>, <a href="rust/oasis_contract_sdk_types">types</a>)</li>
 			</ul>
 		</fieldset>
@@ -92,6 +99,6 @@ fieldset legend {
 				<li><a href="js/sapphire-paratime">Sapphire Client</a></li>
 			</ul>
 		</fieldset>
-		<footer>Copyright © 2023 Oasis Protocol Foundation. All rights reserved.</footer>
+		<footer>Copyright © 2024 <a href="https://oasisprotocol.org/">Oasis Protocol Foundation</a>. The Oasis software is licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></footer>
 	</body>
 </html>
