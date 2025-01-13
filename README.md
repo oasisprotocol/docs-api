@@ -13,6 +13,8 @@ site.
   name deployed at npmjs.org, but with stripped `@oasisprotocol/` prefix. For
   example `@oasisprotocol/sapphire-contracts` is hosted inside
   `sol/sapphire-contracts`.
+- `py`: contains API reference for Python packages named after the import name
+  of the package e.g. `sapphirepy`.
 - `rust`: contains API reference for Rust packages named after the import name
   of the package e.g. `oasis_runtime_sdk`.
 
